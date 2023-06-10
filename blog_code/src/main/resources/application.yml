@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://134.175.88.174:3306/sg_blog?characterEncoding=utf-8&serverTimezone=UTC
+    username: sg_blog
+    password: idcmdzx
+#    url: jdbc:mysql://localhost:3306/sg_blog?characterEncoding=utf-8&serverTimezone=UTC
+#    username: root
+#    password: 123456
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
+  redis:
+    password: idcmdzx
+    host: 134.175.88.174
+mybatis-plus:
+  configuration:
+#    日志打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+#      配置逻辑删除字段、删除设置为1，未删除设置为0，主键自增采用数据库默认方式
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
+server:
+  port: 8888
+oss:
+  bucketName: "myblog-1317586657"
+  secretId: "AKIDELJOGvOr8BIDwcGtV2pbSGzdAYt5KRSK"
+  secretKey: "qUxGSSN80mNq9IF1e8PVTN8i8RaaP3Zt"
+  domainName: "https://myblog-1317586657.cos.ap-guangzhou.myqcloud.com"
+
+
