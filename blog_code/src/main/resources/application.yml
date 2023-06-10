@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://134.175.88.174:3306/sg_blog?characterEncoding=utf-8&serverTimezone=UTC
-    username: sg_blog
-    password: idcmdzx
+    url: ******
+    username: ******
+    password: ******
 #    url: jdbc:mysql://localhost:3306/sg_blog?characterEncoding=utf-8&serverTimezone=UTC
 #    username: root
 #    password: 123456
@@ -12,8 +12,8 @@ spring:
       max-file-size: 2MB
       max-request-size: 5MB
   redis:
-    password: idcmdzx
-    host: 134.175.88.174
+    password: ******
+    host: ******
 mybatis-plus:
   configuration:
 #    日志打印
@@ -27,10 +27,5 @@ mybatis-plus:
       id-type: auto
 server:
   port: 8888
-oss:
-  bucketName: "myblog-1317586657"
-  secretId: "AKIDELJOGvOr8BIDwcGtV2pbSGzdAYt5KRSK"
-  secretKey: "qUxGSSN80mNq9IF1e8PVTN8i8RaaP3Zt"
-  domainName: "https://myblog-1317586657.cos.ap-guangzhou.myqcloud.com"
 
 
